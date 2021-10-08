@@ -19,7 +19,7 @@ jobs:
           target_sync_branch: master
           target_repo_token: ${{ secrets.SYNC_FORK }}
           upstream_sync_repo: julien-klaus/vorkurs_informatik
-          upstream_sync_branch: main
+          upstream_sync_branch: master
           
       - name: New commits found
         if: steps.sync.outputs.has_new_commits == 'true'
