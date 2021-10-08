@@ -21,6 +21,8 @@ jobs:
           upstream_sync_repo: julien-klaus/vorkurs_informatik
           upstream_sync_branch: master
           
+          test_mode: true
+          
       - name: New commits found
         if: steps.sync.outputs.has_new_commits == 'true'
         run: echo "New commits were found to sync."
