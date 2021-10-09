@@ -1,0 +1,25 @@
+name: Sync Fork
+
+on:
+  schedule:
+    - cron: 0,30 10,11 * * *
+  workflow_dispatch:  # on button click
+  
+jobs:
+  sync:
+  
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: master
+          fetch-depth: 0 
+      - name: Sync Upstream
+        uses: exions/merge-upstream@v1
+        with:
+          upstream: julien-klaus/vorkurs_informatik
+          upstream-branch: master
+          branch: master
+          token: ${{ secrets.SYNC_FORK }}
+
