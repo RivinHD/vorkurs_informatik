@@ -15,8 +15,12 @@ jobs:
         with:
           ref: master
       - name: Sync Upstream
-        run: |
-          git fetch https://github.com/julien-klaus/vorkurs_informatik
+        run: | 
+          git remote add -f upstream "https://github.com/julien-klaus/vorkurs_informatik.git"
+          git remote -v
+          git branch --all
+          git config --list
+          git fetch
           git checkout master
-          git merge https://github.com/julien-klaus/vorkurs_informatik/master
+          git merge --ff-only upstream/master
           git push
