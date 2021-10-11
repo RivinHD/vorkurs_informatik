@@ -18,7 +18,6 @@ jobs:
         run: | 
           git remote add -f upstream "https://github.com/julien-klaus/vorkurs_informatik.git"
           git remote -v
-          git fetch upstream
           git checkout master
-          git merge --ff-only upstream/master
+          git merge upstream/master --allow-unrelated-histories
           git push
