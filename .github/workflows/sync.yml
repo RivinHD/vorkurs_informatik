@@ -16,7 +16,7 @@ jobs:
           ref: master
       - name: Sync Upstream
         run: |
-          git fetch julien-klaus/vorkurs_informatik
+          git fetch https://github.com/julien-klaus/vorkurs_informatik
           git checkout master
-          git merge julien-klaus/vorkurs_informatik/master
+          git merge https://github.com/julien-klaus/vorkurs_informatik/master
           git push
