@@ -2,6 +2,8 @@
 
 Herzlich Willkommen beim Vorkurs Informatik. Sie finden hier alle Informationen zu der Vorlesung und der Übung.
 
+Bitte **evaluieren** Sie die Vorlesung und Übung über https://www.evaluation.uni-jena.de/lve/?e=28128&c=a874e3
+
 ## Vorlesung 
 Die Vorlesung findet vom 05.10.2021 - 15.10.2021 von 10:15 - 11:45 in dem BigBlueButton Raum https://bbb.fmi.uni-jena.de/b/jul-dan-xht-54b statt
 
