@@ -15,9 +15,9 @@ def func_f(x):
 print(difference_quotient(func_f, 10, 0.0000000000001))
 
 def area(func, start, stop, step):
-    return sum(func(x) for x in np.arange(start, stop + step, step))
+    return sum([abs(func(x)) * step for x in np.arange(start, stop + step, step)])
 
 def func_s(x):
     return x**2 + 4 + x**3
 
-print(area(func_s, -2, 0, 0.0000001))
+print(area(func_s, -2, 0, 0.000001))
